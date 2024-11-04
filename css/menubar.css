@@ -1,0 +1,100 @@
+@import url(fonts.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.3;
+    line-height: 50px;
+    display: block;
+}
+li{
+    list-style: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo{
+    font-size: 24px;
+    font-family: 'QuosmSemiBold';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+
+
+
+/*menu bar*/
+nav.menu{
+    width: 80px;
+    height: 100vh;
+    background-color: #354e3c;
+    padding: 40px 0 40px 1%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: .4s;
+    overflow: hidden;
+}
+nav.menu.expandir{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-right: 20px;
+}
+.btn-expandir >i{
+    color: aliceblue;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+}
+
+ul li.item-menu:hover{
+    background-color: rgb(76, 158, 95);
+}
+ul li.item-menu{
+    transition: 0.4s;
+    display: block;
+    margin-left: 0px;
+
+
+}
+
+ul li.active{
+    background-color: rgb(76, 158, 95);
+    background-size: 100%;
+}
+
+ul li.item-menu a{
+    color: white;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+}
+ul li.item-menu a .txt-link{
+    margin-right: 30px;
+    transition: .7s;
+    opacity: 0;
+
+}
+
+nav.menu.expandir .txt-link{
+    margin-right: 70px;
+    opacity: 1;
+}
+
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-right: 17px;
+}

@@ -1,0 +1,56 @@
+@import url(/css/fonts.css);
+
+.titulo{
+    font-size: 45px;
+    color: #354e3c;
+}
+
+
+.cabecalho{
+    padding: 15px;
+}
+.subtitulo{
+    color: rgb(195, 220, 54);
+    font-size: 12px;
+    margin-top: -10px;
+}
+.titulo, .subtitulo{
+    text-transform: uppercase;
+    font-family: "QuosmSemiBold";
+}
+.text-container{
+    padding-left: 15px;
+    display: block;
+    width: 280px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+#aprs{
+    text-align: left;
+}
+
+
+
+/*RESPONSIVIDADE*/
+@media(min-width: 768px){
+    .titulo{
+        font-size: 75px;
+    }
+    .titulo, .subtitulo{
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "QuosmSemiBold";
+    }
+    .subtitulo{
+        margin-top: -18px;
+        font-size: 20px;
+    }
+    .cabecalho{
+        padding: 10px;
+        margin: 1px;
+    }
+    .text-container{
+        
+    }
+    
+}
